@@ -5,6 +5,16 @@
   align-items: center;
   padding: 100px 15px;
 }
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1280px;
+    padding: 100px 15px;
+    box-sizing: border-box;
 .hero-image {
   max-width: 100%;
   border-radius: 8px;
@@ -15,6 +25,8 @@
   font-size: 72px;
   font-weight: 600;
   color: #0d0d0d;
+    letter-spacing: -1.44px;
+    width: min-content;
   line-height: 90px;
   text-align: center;
   margin-bottom: 20px;
@@ -25,8 +37,12 @@
   color: #808080;
   line-height: 24px;
   text-align: center;
-  margin-bottom: 40px;
-  max-width: 600px;
+  width: 100%;
+  max-width: 597px;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .hero-button {
   display: inline-block;
@@ -35,14 +51,18 @@
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
   font-weight: 600;
-  padding: 12px 32px;
-  border-radius: 8px;
+    line-height: 24px;
+    padding: 10px 16px;
+    border-radius: 12px;
   text-decoration: none;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   margin: 0 6px;
+    transition: background 0.2s, color 0.2s, border 0.2s;
 }
 
 .hero-buttons {
+    background: #3328bf;
+    color: #fff;
   display: flex;
   gap: 12px;
   justify-content: center;

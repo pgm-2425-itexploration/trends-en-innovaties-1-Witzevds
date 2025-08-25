@@ -10,11 +10,11 @@
 			<p class="hero-description">{{ description|raw }}</p>
 		{% endif %}
 		<div class="hero-buttons">
-			{% if button1_text and button1_url %}
-				<a href="{{ button1_url }}" class="hero-button hero-button--primary">{{ button1_text }}</a>
+			{% if button1_text%}
+				<a href="" class="hero-button hero-button--primary">{{ button1_text }}</a>
 			{% endif %}
-			{% if button2_text and button2_url %}
-				<a href="{{ button2_url }}" class="hero-button hero-button--secondary">{{ button2_text }}</a>
+			{% if button2_text  %}
+				<a href="" class="hero-button hero-button--secondary">{{ button2_text }}</a>
 			{% endif %}
 		</div>
 	</div>
