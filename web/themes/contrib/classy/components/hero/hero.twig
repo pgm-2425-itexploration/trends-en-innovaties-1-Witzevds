@@ -1,0 +1,21 @@
+<div class="hero-component">
+	{% if image_url %}
+		<img src="{{ image_url }}" alt="Hero image" class="hero-image"/>
+	{% endif %}
+	<div class="hero-content">
+		{% if title %}
+			<h1 class="hero-title">{{ title }}</h1>
+		{% endif %}
+		{% if description %}
+			<p class="hero-description">{{ description|raw }}</p>
+		{% endif %}
+		<div class="hero-buttons">
+			{% if button1_text and button1_url %}
+				<a href="{{ button1_url }}" class="hero-button hero-button--primary">{{ button1_text }}</a>
+			{% endif %}
+			{% if button2_text and button2_url %}
+				<a href="{{ button2_url }}" class="hero-button hero-button--secondary">{{ button2_text }}</a>
+			{% endif %}
+		</div>
+	</div>
+</div>

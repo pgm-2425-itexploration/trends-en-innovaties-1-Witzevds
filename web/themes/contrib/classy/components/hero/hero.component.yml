@@ -1,0 +1,40 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+name: Hero
+status: experimental
+description: Hero component gebaseerd op Figma design (node 1:2)
+group: Figma
+
+variants:
+  default:
+    title: Default
+    description: Standaard variant
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Titel
+      description: Titel van het blok
+    description:
+      type: string
+      title: Beschrijving
+      description: Korte beschrijving (HTML toegestaan)
+  # Geen afbeelding in deze hero-component
+    button1_text:
+      type: string
+      title: Eerste knop tekst
+      description: Tekst voor de eerste knop
+    button1_url:
+      type: string
+      title: Eerste knop URL
+      description: Link voor de eerste knop
+    button2_text:
+      type: string
+      title: Tweede knop tekst
+      description: Tekst voor de tweede knop
+    button2_url:
+      type: string
+      title: Tweede knop URL
+      description: Link voor de tweede knop
