@@ -1,0 +1,32 @@
+# Ignore Composer dependencies
+/vendor/
+
+# Ignore Drupal generated files
+/web/sites/default/files/
+/web/sites/default/private/
+
+# Ignore configuration and cache
+/web/sites/*/settings.php
+/web/sites/*/services.yml
+/web/sites/*/files/
+/web/sites/*/private/
+/web/sites/*/simpletest/
+/web/sites/*/config/
+/web/sites/*/php/
+/web/sites/*/translations/
+
+# Ignore IDE and OS files
+.idea/
+*.swp
+.DS_Store
+
+# Ignore other build artifacts
+/node_modules/
+
+# Ignore lock files
+composer.lock
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
