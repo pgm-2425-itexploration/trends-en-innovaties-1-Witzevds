@@ -1,0 +1,35 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+
+name: Test Figma
+status: experimental
+description: Component gebaseerd op Figma design (node 288:32)
+group: Figma
+
+variants:
+  default:
+    title: Default
+    description: Standaard variant
+
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Titel
+      description: Titel van het blok
+    description:
+      type: string
+      title: Beschrijving
+      description: Korte beschrijving (HTML toegestaan)
+    image_url:
+      type: string
+      title: Afbeelding
+      description: URL naar afbeelding (optioneel)
+    button_text:
+      type: string
+      title: Button tekst
+      description: Tekst voor de knop
+    button_url:
+      type: string
+      title: Button URL
+      description: Link voor de knop

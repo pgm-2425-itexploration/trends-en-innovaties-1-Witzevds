@@ -1,0 +1,20 @@
+<div class="test-figma">
+	<div class="test-figma__content">
+		{% if title %}
+			<h1 class="test-figma__title">{{ title }}</h1>
+		{% endif %}
+		{% if description %}
+			<p class="test-figma__description">{{ description }}</p>
+		{% endif %}
+		{% if button_text and button_url %}
+			<a href="{{ button_url }}" class="test-figma__button">
+				<span>{{ button_text }}</span>
+			</a>
+		{% endif %}
+	</div>
+	{% if image_url %}
+		<div class="test-figma__image">
+			<img src="{{ image_url }}" alt="{{ title|e }}">
+		</div>
+	{% endif %}
+</div>
